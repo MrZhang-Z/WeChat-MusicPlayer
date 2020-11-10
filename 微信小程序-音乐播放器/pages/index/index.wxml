@@ -1,0 +1,57 @@
+<!--index.wxml-->
+<!-- 顶部标题 -->
+<view id='title'>
+	<text>音 乐 馆</text>
+</view>
+<!-- 轮播 -->
+<swiper autoplay='ture' indicator-color='white' indicator-dots='true' interval='2000'>
+  <swiper-item wx:for="{{bannerList}}" wx:for-item="content">
+		<image src='{{content.src}}'></image>
+	</swiper-item>
+</swiper>
+<view class="container">
+	<view class="mulu">
+		<view bindtap="toSinger">
+			<image src='/images/icon/singer.png'></image>
+			<text>歌手</text>
+		</view>
+		<view bindtap="toFavorite">
+			<image src='/images/icon/favorite.png'></image>
+			<text>喜欢</text>
+		</view>
+		<view bindtap="toRecommend">
+			<image src='/images/icon/recommend.png'></image>
+			<text>推荐</text>
+		</view>
+	</view>
+	<!-- 热门 -->
+	<view class="popular">
+		<view class="title">热 门</view>
+		<movable-area>
+			<movable-view direction="horizontal" inertia="true">
+        <view id="information" wx:for="{{songList}}" wx:for-item="content" wx:if="{{index<12}}" >
+					<view id="{{content.sName}}" bindtap="toPlay">
+						<image src='{{content.sImg}}'></image>
+						<text style="font-size: 12px;">
+							{{content.sName}}
+						</text>
+						<text style="font-size: 11px;">{{content.sSinger}}</text>
+					</view>
+				</view>
+			</movable-view>
+		</movable-area>
+	</view>
+	<!-- 榜单 -->
+	<view class="list"  bindtap="toLeaderboard">
+		<view class="title">榜 单</view>
+    <view id="leaderboard">
+      <view id="leaderboard_title">排行榜</view>
+      <view id="leaderboard_img">
+        <image src="/images/songs/songs_chuimeng.jpg"></image>
+			</view>
+      <view id="leaderboard_content" wx:for="{{songList}}"wx:key wx:if="{{index<3}}" wx:for-item="content">
+        <text style="font-size: 12px;">{{index+1}}.</text><text style="font-size: 12px;">{{content.sName}}</text><text style="font-size: 11px;">-{{content.sSinger}}</text>
+      </view>
+    </view>
+	</view>
+</view>

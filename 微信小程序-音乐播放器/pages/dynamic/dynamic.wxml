@@ -1,0 +1,6 @@
+<!--pages/dynamic/dynamic.wxml-->
+<!-- 顶部标题 -->
+<view id='title'>
+	<text>动 态</text>
+</view>
+

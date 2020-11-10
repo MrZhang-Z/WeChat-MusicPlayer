@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/singer/singer",
+    "pages/SingerDetails/SingerDetails",
+    "pages/play/play",
+    "pages/recommend/recommend",
+    "pages/favorite/favorite",
+    "pages/leaderboard/leaderboard",
+    "pages/main/main",
+    "pages/dynamic/dynamic"
+  ],
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "音乐",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#c2c2c4",
+    "selectedColor": "#1cbb9b",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "音乐馆",
+        "iconPath": "/images/icon/音乐.png",
+        "selectedIconPath": "/images/icon/音乐_1.png"
+      },
+      {
+        "pagePath": "pages/dynamic/dynamic",
+        "text": "动态",
+        "iconPath": "/images/icon/动态.png",
+        "selectedIconPath": "/images/icon/动态_1.png"
+      },
+      {
+        "pagePath": "pages/main/main",
+        "text": "我的",
+        "iconPath": "/images/icon/我的.png",
+        "selectedIconPath": "/images/icon/我的_1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

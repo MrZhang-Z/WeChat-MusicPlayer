@@ -1,0 +1,14 @@
+<!--pages/SingerDetails/SingerDetails.wxml-->
+<view id="SingerDetails">
+  <view id="image">
+    <image src="{{singerImg}}"></image>
+    <text>{{singerName}}</text>
+  </view>
+  <view id="songs">
+    <view id="list" wx:for="{{Eminem}}" wx:for-item="content">
+      <view><image src="/images/icon/yinyue.png"></image></view>
+      <text id="title">{{content.sName}}</text>
+      <text id="name">\n\n{{content.sSinger}}</text>
+    </view>
+  </view>
+</view>

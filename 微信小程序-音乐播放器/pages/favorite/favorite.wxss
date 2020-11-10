@@ -1,0 +1,92 @@
+/* pages/favorite/favorite.wxss */
+/* pages/leaderboard/leaderboard.wxss */
+
+/* 顶部标题 */
+.title{
+  width: 96%;
+  height: 50px;
+  margin-left: 2%;
+}
+.title>text{
+  font-size: 25px;
+  line-height: 50px;
+  border-bottom: 3px solid #1cbb9b;
+}
+
+#favorite{
+  width: 96%;
+  height: 100%;
+  margin: 2%;
+}
+#image>image{
+  width: 100%;
+  height: 330px;
+  z-index: -1;
+  object-fit: cover;
+  /* 设置图片模糊 */
+  /* -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px); */
+  filter: blur(1px);
+}
+
+
+#content_1{
+  width: 96%;
+  margin: 2%;
+  height: 330px;
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#content_1>image{
+  width: 100px;
+  height: 100px;
+  margin-top: 18%;
+  margin-left: 8%;
+  
+  filter: blur(1px);
+}
+
+#content_2{
+  width: 96%;
+  height: 100%;
+  margin: 2%;
+  position: absolute;
+  top: 255px;
+  left: 0;
+  background-color: #ffffff;
+}
+
+#list{
+  width: 96%;
+  height: 60px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  margin: 2%;
+}
+#list>view>image{
+  width: 20px;
+  height: 20px;
+  margin-top: 20px;
+}
+#list>view{
+  width: 50px;
+  height: 50px;
+  float: right;
+}
+
+#title{
+  font-size: 15px;
+  margin-left: 15px;
+  line-height: 30px;
+}
+#name{
+  font-size: 11px;
+  margin-left: 45px;
+  position: absolute;
+  left: 10px;
+  margin-top: 20px;
+}

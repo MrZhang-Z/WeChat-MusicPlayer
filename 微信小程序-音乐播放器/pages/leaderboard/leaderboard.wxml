@@ -1,0 +1,22 @@
+<!--pages/leaderboard/leaderboard.wxml-->
+
+<view id="leaderboard">
+  <view id="image">
+    <image src="/images/songs/songs_chuimeng.jpg"></image>
+  </view>
+  <view id="content">
+    <view id="content_1">
+      <image src="/images/icon/paihang.png" style="color: white;"></image>
+    </view>
+    <view id="content_2">
+      <view id="list" wx:for="{{songList}}" wx:for-item="content" wx:for-index="id" wx:if="{{id<10}}" >
+        <view id="{{content.sName}}"  bindtap="toPlay">
+          <text style="margin-left: 10px; font-size: 15px;">{{id+1}}.</text>
+          <view><image src="/images/icon/yinyue.png"></image></view>
+          <text id="title">{{content.sName}}</text>
+          <text id="name">\n\n{{content.sSinger}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

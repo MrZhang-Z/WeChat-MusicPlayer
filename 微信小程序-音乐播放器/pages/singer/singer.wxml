@@ -1,0 +1,21 @@
+<!--pages/singer/singer.wxml-->
+<!-- 顶部标题 -->
+<view id='title'>
+	<text>歌 手</text>
+</view>
+<view id="singer">
+  <view id="button">
+    <button bindtap="all" data-sex="2" style="background:{{allBackground}}; color:{{allColor}}">全部</button>
+    <button bindtap="all" data-sex="1" style="background:{{maleBackground}}; color:{{maleColor}}">男</button>
+    <button bindtap="all" data-sex="0" style="background:{{femaleBackground}}; color:{{femaleColor}}">女</button>
+  </view>
+  <view id="content">
+    <view id="content_singer" wx:for="{{List}}" wx:for-item="content" >
+      <view bindtap="toSingerDetails" data-singer="{{content.name}}" >
+        <image src="{{content.img}}"></image>
+        <text>{{content.name}}</text>
+        <button>+关注</button>
+      </view>      
+    </view>
+  </view>
+</view>

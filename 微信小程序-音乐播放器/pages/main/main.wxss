@@ -1,0 +1,12 @@
+/* pages/main/main.wxss */
+/* 顶部标题 */
+#title{
+  width: 96%;
+  height: 50px;
+  margin-left: 2%;
+}
+#title>text{
+  font-size: 25px;
+  line-height: 50px;
+  border-bottom: 3px solid #1cbb9b;
+}

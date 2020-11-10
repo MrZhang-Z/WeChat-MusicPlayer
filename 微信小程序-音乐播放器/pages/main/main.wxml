@@ -1,0 +1,5 @@
+<!--pages/main/main.wxml-->
+<!-- 顶部标题 -->
+<view id='title'>
+	<text>我 的</text>
+</view>

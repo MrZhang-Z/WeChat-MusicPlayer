@@ -1,0 +1,160 @@
+/**index.wxss**/
+
+/* 热门 */
+.popular{
+  height: 100%;
+  width: 98%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+/* 榜单 */
+.list{
+  height: 100%;
+  width: 98%;
+}
+
+/* 轮播 */
+swiper{
+  height: 350rpx;
+  margin-left: 2%;
+}
+swiper image{
+  width: 98%;
+  height: 100%;
+}
+
+/* 目录 */
+.mulu{
+  height: 120rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 96%;
+  background-color: #f3f3f3;
+  margin-top: 15px;
+  border-radius: 10px;
+  margin: 2%;
+}
+.mulu>view{
+  width: 22%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mulu>view>image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.mulu>view>text{
+  font-size: 25rpx;
+}
+
+/* 顶部标题 */
+#title{
+  width: 96%;
+  height: 50px;
+  margin-left: 2%;
+}
+#title>text{
+  font-size: 25px;
+  line-height: 50px;
+  border-bottom: 3px solid #1cbb9b;
+}
+
+/* 模块标题 */
+.title{
+  width: 100%;
+  height: 25px;
+  color: #1cbb9b;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+/* #information{
+  width: 100px;
+  height: 150px;
+  float: left;
+  margin: 5px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  border: 1px solid red;
+  
+} */
+#information>view{
+  width: 100px;
+  height: 150px;
+  float: left;
+  margin: 5px;
+  background-color: #f3f3f3;
+  border-radius: 10%;
+}
+#information>view>image{
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+}
+#information>view>text{
+  font-size: 11px;
+}
+
+/* 滑块 */
+movable-area{
+  width: 670px;
+  height: 320px;
+}
+movable-view{
+  width: 700px;
+  height: 340px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0px;
+}
+
+
+/* 排行榜 */
+#leaderboard{
+  width: 96%;
+  height: 120px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  margin: 2%;
+}
+#leaderboard_title{
+  font-size: 18px;
+  line-height: 30px;
+  float: left;
+  width: 62%;
+  margin-left: 8px;
+  margin-top: 5px;
+}
+#leaderboard_content{
+  height:25px;
+  width: 62%;
+  float: left;
+  margin-left: 8px;
+}
+#leaderboard_content>text{
+  line-height: 26px;
+}
+#leaderboard_img{
+  width: 120px;
+  height: 120px;
+  /* border: 1px solid green; */
+  float: right;
+}
+#leaderboard_img>image{
+  width: 120px;
+  height: 120px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+

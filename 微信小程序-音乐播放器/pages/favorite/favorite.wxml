@@ -1,0 +1,22 @@
+<!--pages/favorite/favorite.wxml-->
+<view class='title'>
+	<text>喜 欢</text>
+</view>
+<view id="favorite">
+  <view id="image">
+    <image src="/images/icon/xihuan_2.jpg"></image>
+  </view>
+  <view id="content">
+    <view id="content_1">
+      <image src="/images/icon/xihuan_3.png"></image>
+    </view>
+    <view id="content_2">
+      <view id="list" wx:for="{{songList_favorite}}" wx:for-item="content" wx:for-index="id" bindtap="toPlay">
+        <text style="margin-left: 10px; font-size: 15px;">{{id+1}}.</text>
+        <view><image src="/images/icon/xihuan_1.png"></image></view>
+        <text id="title">{{content.sName}}</text>
+        <text id="name">\n{{content.sSinger}}</text>
+      </view>
+    </view>
+  </view>
+</view>

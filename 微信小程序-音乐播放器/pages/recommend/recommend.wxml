@@ -1,0 +1,30 @@
+<!--pages/recommend/recommend.wxml-->
+
+<view class='title'>
+	<text>推 荐</text>
+</view>
+<view id="recommend">
+
+	<view class='list'>
+		<swiper autoplay="{{true}}" interval='2000' previous-margin="{{'140rpx'}}" next-margin="{{'140rpx'}}" bindchange="swiperChange">
+			<block wx:for="{{songList}}" wx:key="{{index}}" wx:for-item="content" wx:if="{{index<5}}">
+				<swiper-item bindtap="toPlay" id="{{content.sName}}">
+					<image src="{{content.sImg}}" class="slide-image {{swiperIndex == index ? 'active' : ''}}" />
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+
+	<view id="content">
+		<view wx:for="{{songList}}" wx:for-item="content" >
+			<view id="{{content.sName}}" bindtap="toPlay">
+				<image src="{{content.sImg}}" id="content_image"></image>
+				<image src="/images/icon/播放.png" id="bofang"></image>
+				<text id="content_title">
+				{{content.sName}}
+				</text>
+				<text id="content_name">{{content.sSinger}}</text>
+			</view>
+		</view>
+	</view>
+</view>

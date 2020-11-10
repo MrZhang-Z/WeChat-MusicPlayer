@@ -1,0 +1,45 @@
+<view id="music_img">
+  <image id="singerImg" class="music-image" src="{{mush[number].sImg}}"></image>
+</view>
+
+<!-- 歌手与歌曲名字 -->
+<view class="music-title">{{mush[number].sName}}</view>
+<view class="music-name">{{mush[number].sSinger}}</view>
+
+<view class="heart">
+    <!-- 未收藏时图片 -->
+      <image catchtap='handleCollection' id="{{mush[number].sName}},{{mush[number].sSinger}}" class="{{mush[number].sSinger}}" wx:if='{{!isCollected}}' src='/images/icon_play/like.png'></image>
+    <!-- 收藏时图片 -->
+      <image catchtap='handleCollection' id="{{mush[number].sName}},{{mush[number].sSinger}}" wx:if='{{isCollected}}' src='/images/icon_play/like1.png'></image>
+</view>
+
+<!-- 小功能 -->
+<view class="fun">
+  <image class="fun1" src="/images/icon_play/sing.png"></image>
+  <image class="fun2" src="/images/icon_play/sound.png"></image>
+  <image class="fun3" src="/images/icon_play/xiazai.png"></image>
+  <image class="fun4" src="/images/icon_play/comment.png"></image>
+  <image class="fun5" src="/images/icon_play/more.png"></image>
+</view>
+
+<!-- 进度条 -->
+<view class="cu-progress" bindchange="sliderChange">
+  <view class="cu-prucin" style="width:{{widthx}}%"></view>
+  <view class="cu-left">{{playback}}</view>
+  <view class="cu-right">{{duration}}</view>
+</view>
+
+<!-- 歌曲控制，播放按钮等等 -->
+<view class="music-button">
+  <image class="cycle" src="/images/icon_play/cycle.png"></image>
+  <view bindtap="song" data-song="last">
+    <image class="last" src='/images/icon_play/last.png'></image>
+  </view>
+  <view bindtap="music">
+    <image class="play" src='{{play?"/images/icon_play/play.png":"/images/icon_play/pause.png"}}'></image>
+  </view>
+  <view bindtap="song" data-song="next">
+    <image class="next" src='/images/icon_play/next.png'></image>
+  </view>
+  <image class="list" src="/images/icon_play/list.png"></image>
+</view>

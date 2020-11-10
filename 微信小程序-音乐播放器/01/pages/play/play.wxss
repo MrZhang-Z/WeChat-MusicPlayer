@@ -1,0 +1,122 @@
+page{
+  background-image:linear-gradient(45deg, #65322F, #FBE7E5);
+}
+view,image{
+  box-sizing: border-box;
+}
+.music-image{
+  width: 88%;
+  margin:10% 6% 3% 6%;
+  border-radius: 30rpx; 
+}
+.music-title{
+  width: 100%;
+  padding: 5% 6% 3% 6%;
+  font-size: 50rpx;
+  font-weight: 700;
+  color: #fff;
+}
+.music-name{
+  width: 100%;
+  padding: 0 6% 5% 6%;
+  font-size: 28rpx;
+  color: rgba(240, 240, 240, 0.8);
+}
+
+/* 收藏 */
+.heart image {
+  width: 45rpx;
+  height: 45rpx;
+  position: relative;
+  top: -140rpx;
+  left: 640rpx;
+}
+
+/* 小功能 */
+.fun {
+  position: relative;
+  top: 50rpx;
+  left: -55rpx;
+}
+
+.fun image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 100rpx;
+}
+
+.fun > .fun4 {
+  width: 45rpx;
+  height: 45rpx;
+}
+
+/* 进度条 */
+.cu-progress{
+  height: 6rpx;
+  width: 85%;
+  float: left;
+  background-color: rgba(240, 240, 240, 0.2);
+  margin: 5% 5% 0 5%;
+  border-radius: 20rpx;
+  position: relative; 
+  top: 100rpx;
+  left: 25rpx;
+}
+.cu-prucin{
+  height: 100%;
+  background-color: #fff;
+  float: left;
+  position: relative;
+}
+.cu-prucin::after{
+  border-radius: 50%;
+	background: white;
+	position: absolute;
+	right: 0rpx;
+	content: '';
+	display: block;
+  margin: calc((6rpx - 14rpx)/2);
+	width: 14rpx;
+	height: 14rpx;
+}
+.cu-left{
+  position: absolute;
+  left: 0;
+  margin-top: 16rpx;
+  color: rgba(240, 240, 240, 0.8);
+  font-size: 22rpx;
+}
+.cu-right{
+  position: absolute;
+  right: 0;
+  margin-top: 16rpx;
+  color: rgba(240, 240, 240, 0.4);
+  font-size: 22rpx;
+}
+
+/* 播放控制 */
+.music-button{
+  position: relative;
+  top: 210rpx;
+  left: -40rpx;
+}
+.music-button image{
+  height: 50rpx;
+  width: 50rpx;
+  float: left;
+  margin-left: 90rpx;
+}
+.music-button view > .play {
+  width: 100rpx;
+  height: 100rpx;
+  position: relative;
+  top: -20rpx;
+}
+.music-button view > .next {
+  width: 45rpx;
+  height: 45rpx;
+}
+.music-button > .list {
+  width: 45rpx;
+  height: 45rpx;
+}
